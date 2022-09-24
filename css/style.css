@@ -227,61 +227,7 @@ button a i {
     }
 }
 
-
-
-/* Inicio Header + NAV  */
-/* .container__header {
-    display:flex;   
-    flex-flow: row nowrap; 
-    justify-content: space-between;
-    align-items: center;
-    height: 70px;
-    width: 100%;
-}
-
-.container__logo {
-    height: 70px;
-}
-.container__logo-img {
-    height: 100%;
-    padding: 5px;
-}
-
-.container__nav ul {
-    display: flex;
-    margin-right: 20px;
-    width: 100%;
-}
-
-.container__nav ul li{
-    display: flex;
-    margin: 0px 5px; 
-}
-
-.container__nav ul li a {
-    display: flex;   
-    justify-content: center;
-    align-items: center;
-    padding: 5px;
-    font-size: 1.2em;
-    line-height: 2em; 
-    text-align: center;
-    width: 100%;
-}
-
-.container__nav ul li a i {
-    margin-right: 5px;
-}
-
-nav ul li:hover {
-    background-color: #3a552b; 
-    border-radius: 5px;
-    box-shadow: inset 0px 0px 5px 1px #000000;    
-    border-bottom: 1px solid #ffffff;
-} */
-/* Fin Header + NAV  */ 
-
-
+/* Fin Header + NAV */
 
 /* Pagina activa actualmente en nuestro NAV */
 .active {
@@ -292,9 +238,6 @@ nav ul li:hover {
     color: #ffffff; 
 }
 /* Pagina activa actualmente en nuestro NAV */
-
-
-
 
 /* INICIO MAIN*/
 
