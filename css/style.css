@@ -670,6 +670,7 @@ table h1 {
 
 .form h2 {
     margin-bottom: 10px;
+    color: #afe045;
 }
 
 @media screen and (min-width: 992px) {
