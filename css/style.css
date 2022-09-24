@@ -647,13 +647,14 @@ table h1 {
     font-size: 1.7em;
 }
 
-.mapa {
-    margin-bottom: 50px;      
+.mapa {    
     display: flex;
     flex-direction: column;
     text-align: center;
     justify-content: center;
     align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
     
 }
 
@@ -664,12 +665,34 @@ table h1 {
 .form {
     padding: 10px 20px;
     margin-bottom: 20px;
+    
 }
 
-.img-grid
-.horarios
-.mapa 
-.form
+.form h2 {
+    margin-bottom: 10px;
+}
+
+@media screen and (min-width: 992px) {
+    .grid__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+    "img-grid img-grid img-grid"
+    "horarios horarios form"
+    "mapa mapa mapa";
+    gap: 20px;
+    }
+
+    .form {
+        margin-right: 100px;
+    }
+
+    .horarios h3 {
+        margin-top: 100px;
+
+    }
+
+}
 
 
 
