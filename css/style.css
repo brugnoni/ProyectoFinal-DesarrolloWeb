@@ -272,7 +272,7 @@ button a i {
     flex-direction: column;
     height: 50vh;
     color: #ffffff;
-    background-image: url("/img/catalogo/reprocann.jpg");
+    background-image: url("../img/catalogo/reprocann.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
