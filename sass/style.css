@@ -279,26 +279,36 @@ button a i {
   }
 }
 /* Fin Header + NAV */
-.header {
-  grid-area: header;
-}
-
 .main {
   grid-area: main;
-  height: 50vh;
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/header/background.jpg);
-  background-repeat: norepeat;
-  background-position: center;
-  background-size: cover;
   text-align: center;
   gap: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.section0 {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/header/background.jpg);
+  background-position: center;
+  background-size: cover;
+  padding: 50px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
-.main h1 {
+.section0 h1 {
   color: #afe045;
+}
+
+.header {
+  grid-area: header;
+}
+
+.section0 {
+  grid-area: section0;
 }
 
 .section1 {
@@ -317,17 +327,22 @@ button a i {
   grid-area: footer;
 }
 
-.container {
+.containerIndex {
   display: grid;
-  grid-template-columns: auto;
-  grid-template-areas: "header" "main" "section1" "section2" "section3" "footer";
+  grid-template-columns: 1fr;
+  grid-template-areas: "header" "main" "footer";
 }
 
 @media screen and (min-width: 992px) {
-  .container {
+  .containerIndex {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
-    grid-template-areas: "header header header" "main main main" "section1 section1 section2" "section3 section3 section3" "footer footer footer";
+    grid-template-areas: "header header header" "main main main" "footer footer footer";
+  }
+  .main {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "section0 section0 section1 section1" "section2 section2 section1 section1" "section3 section3 section3 section3";
   }
 }
 .section1 {
@@ -390,28 +405,26 @@ button a i {
   text-align: center;
   justify-content: center;
   flex-direction: column;
-  height: 50vh;
+  height: 40vh;
   color: #ffffff;
   background-image: url("../img/catalogo/reprocann.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
-main section h2, p {
+.sectionRepro1 {
   text-align: center;
   padding: 5px 0px;
   color: #dddddd;
+  padding: 20px;
 }
 
 #galeriaFotos {
-  width: 100%;
-  height: auto;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
+  gap: 1em;
+  margin-bottom: 10px;
 }
 #galeriaFotos p {
   border-radius: 5px;
@@ -421,16 +434,70 @@ main section h2, p {
   padding: 5px;
 }
 
-.galeria {
-  margin: 10px 10px;
+@media screen and (min-width: 992px) {
+  #galeriaFotos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "galeria1 galeria2 galeria3" "galeria4 galeria5 galeria6";
+  }
+}
+.galeria1 {
   box-shadow: 0px 4px 10px 0 #afe045;
-  width: 33%;
-  height: 100%;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
 }
-.galeria img {
+.galeria1 img {
+  width: 100%;
+}
+
+.galeria2 {
+  box-shadow: 0px 4px 10px 0 #afe045;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.galeria2 img {
+  width: 100%;
+}
+
+.galeria3 {
+  box-shadow: 0px 4px 10px 0 #afe045;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.galeria3 img {
+  width: 100%;
+}
+
+.galeria4 {
+  box-shadow: 0px 4px 10px 0 #afe045;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.galeria4 img {
+  width: 100%;
+}
+
+.galeria5 {
+  box-shadow: 0px 4px 10px 0 #afe045;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.galeria5 img {
+  width: 100%;
+}
+
+.galeria6 {
+  box-shadow: 0px 4px 10px 0 #afe045;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.galeria6 img {
   width: 100%;
 }
 
@@ -447,6 +514,10 @@ main section h2, p {
   color: #849d4f;
 }
 
+.sectionbtn {
+  text-align: center;
+}
+
 /* Cierre section de página Reprocann.html */
 /* Inicio section de pagina Tablas.html */
 /* Tabla de Cultivos */
@@ -459,28 +530,33 @@ table {
 table td {
   padding: 10px;
   color: #f1f1f1;
-}
-
-td {
   border: 2px solid #afe045;
   text-align: center;
   border-collapse: collapse;
 }
-
 table a {
   font-size: 1.5em;
   padding: 5px;
 }
 table a:hover {
   color: #afe045;
-  border-radius: 5px;
-  border: #000000 2px solid;
 }
 table h1 {
   color: #f8f8f8;
   padding: 5px;
 }
 
+@media screen and (min-width: 992px) {
+  table a {
+    font-size: 1.5em;
+    padding: 5px;
+  }
+  table td a:hover {
+    color: #afe045;
+    border-radius: 5px;
+    border: #000000 2px solid;
+  }
+}
 /* Tabla de Cultivos */
 /* Inicio Tabla Azteka Seccion  */
 #tabla__img-header img {
@@ -809,5 +885,4 @@ footer {
   height: 25px;
 }
 
-/* FIN Div footer para el p+redes de la derecha*/
-/* Termina Footer *//*# sourceMappingURL=style.css.map */
+/* FIN Div footer para el p+redes de la derecha*//*# sourceMappingURL=style.css.map */
