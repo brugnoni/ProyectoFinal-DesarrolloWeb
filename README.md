@@ -1,9 +1,9 @@
-# PreEntrega2-Brugnoni
-proyecto coderhouse 2da entrega
-
-Para esta entrega elegi las paginas index.html y pages/contacto.html para modificar y darle vista mobile y desktop.
+# PreEntrega3-BrugnoniNahuel
+Proyecto Coderhouse 3da entrega:
 
 Mediante Git y Github versione mi pagina a medida que fui avanzando en mi proyecto.
 
-Tuve problemas con algunos commit ya que en este momento no tengo computadora disponible donde vivo y mi amigo me presto la suya para poder terminar este trabajo.
-Es por eso que puede llegar a aparecer su nombre en los commit (Enzo).
+Utilizando bootstrap mejore el Navbar a algo mas responsive, utilice el sistema de grillado de Bootstrap para acomodar las vistas Responsives, compile mediante sass mi css, realice mixins,variables,resets mediante el uso de archivos _partials de scss.
+
+Todas las paginas son Responsive para Mobile y Desktop.
+Corregi las rutas que antes contenian demasiados "../"
