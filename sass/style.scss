@@ -1,7 +1,6 @@
 @import "_mixins.scss";
 @import "_reset.scss";
-
-
+@import "_variables.scss";
 
 * {
     padding: 0;
@@ -69,12 +68,12 @@
   
   h1 {
     font-size: 3rem;
-    color: #fff;
+    color: $Blanco;
   }
   
   h2 {
     font-size: 2.50rem;
-    color: #afe045;
+    color: $Acento;
     text-align: center;
   }
   
@@ -96,7 +95,7 @@
   
   a {
     text-decoration: none;
-    color: #dddddd;
+    color: $Blanco;
   }
   
   p {
@@ -110,7 +109,7 @@
   
   input, textarea {
     background-color: #3a552b;
-    color: #f1f1f1;
+    color: $Blanco;
     font-family: 'Roboto', sans-serif;
   }
   
@@ -119,13 +118,13 @@
   .btn {
     border-radius: 5px;
     box-shadow: inset #000000 0px 0px 5px 1px;
-    background-color: #293a22;
-    border: 1px solid #afe045;
+    background-color: $Background;
+    border: 1px solid $Acento;
     margin: 5px;
     text-align: center;
   
     a {
-      color: #dddddd;
+      color: $Blanco;
     }
   }
   
@@ -156,9 +155,9 @@
   .active {
     border-radius: 5px;
     box-shadow: inset #000000 0px 0px 5px 1px;
-    background-color: #293a22;
-    border: 1px solid #afe045;
-    color: #ffffff;
+    background-color: $Background;
+    border: 1px solid $Acento;
+    color: $Blanco;
   }
   
   /* Pagina activa actualmente en nuestro NAV */
@@ -167,10 +166,10 @@
 
   
   .nav-link {
-    color: white;
+    color: $Blanco;
 
     &:hover {
-      color: #afe045;
+      color: $Acento;
     }
   }
 
@@ -190,6 +189,7 @@
   }
 
   .section0 {        
+    height: 50vh;
     grid-area: section0;
     background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/header/background.jpg);
     background-position: center;
@@ -203,13 +203,13 @@
 
   .section1 {    
     grid-area: section1;
-  }
+    }
     
     h1 {
-      color: #afe045;
+      color: $Acento;
     }   
 
-    p {color: #f1f1f1;}
+    p {color: $Blanco;}
   }
 
   .header {
@@ -222,7 +222,7 @@
   
   .section3 {
     grid-area: section3;
-    color: #f1f1f1;
+    color: $Blanco;
   }
   
   .footer {
@@ -243,9 +243,9 @@
   .boton {
     border-radius: 20px;
     box-shadow: inset #000000 0px 0px 5px 1px;
-    background-color: #293a22;
-    border: 1px solid #afe045;
-    color: #ffffff;
+    background-color: $Background;
+    border: 1px solid $Acento;
+    color: $Blanco;
   }
   
   .section2 {
@@ -257,9 +257,9 @@
     background: linear-gradient(to bottom, #172b1a, #849d4f);
     border-radius: 5px;
     box-shadow: inset #000000 0px 0px 5px 1px;
-    background-color: #293a22;
-    border: 1px solid #afe045;
-    color: #ffffff;
+    background-color: $Background;
+    border: 1px solid $Acento;
+    color: $Blanco;
     gap: 10px;
   
     img {
@@ -294,7 +294,7 @@
     justify-content: center;
     flex-direction: column;
     height: 40vh;
-    color: #ffffff;
+    color: $Blanco;
     background-image: url("../img/catalogo/reprocann.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -305,7 +305,7 @@
   .sectionRepro1 {
     text-align: center;
     padding: 5px 0px;
-    color: #dddddd;
+    color: $Blanco;
     padding: 20px;
   }
   
@@ -314,14 +314,14 @@
     p {
       border-radius: 5px;
       box-shadow: inset #000000 0px 0px 5px 1px;
-      background-color: #293a22;
-      border: 1px solid #afe045;
+      background-color: $Background;
+      border: 1px solid $Acento;
       padding: 5px;
     }
   }
   
   @mixin galerias {
-    box-shadow: 0px 4px 10px 0 #afe045;
+    box-shadow: 0px 4px 10px 0 $Acento;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap; 
@@ -354,7 +354,7 @@
   
     li {
       margin: 5px;
-      color: #ffffff;
+      color: $Blanco;
       font-size: 1.2em;
     }
   
@@ -375,14 +375,14 @@
 
 table {
   width: 100%; 
-  border: 2px solid #afe045;
+  border: 2px solid $Acento;
   text-align: center;
   border-collapse: collapse;
 
   td {
     padding: 10px;
-    color: #f1f1f1;      
-    border: 2px solid #afe045;
+    color: $Blanco;      
+    border: 2px solid $Acento;
     text-align: center;
     border-collapse: collapse;
   }
@@ -392,12 +392,12 @@ table {
     padding: 5px;
 
     &:hover {
-      color: #afe045
+      color: $Acento
     }
   }
 
   h1 {
-    color: #f8f8f8;
+    color: $Blanco;
     padding: 5px;
   }
 }
@@ -411,7 +411,7 @@ table {
       }
     
       td a:hover {
-          color: #afe045;
+          color: $Acento;
           border-radius: 5px;
           border: #000000 2px solid;
       }
@@ -442,7 +442,7 @@ table {
   }
   
   .tabla__caracteristicas {
-    background-color: #293a22;
+    background-color: $Background;
   
     h3 {
       padding: 5px 5px;
@@ -450,7 +450,7 @@ table {
     }
   
     p {
-      color: #dddddd;
+      color: $Blanco;
       padding: 5px 5px;
       text-align: center;
       margin: 0 50px;
@@ -534,23 +534,23 @@ table {
     }
 
     p{
-      color:#dddddd
+      color:$Blanco
     }
   }
   
   #nutrientes {
     font-size: 1.5em;
-    color: #dddddd;
+    color: $Blanco;
   
     li {
       list-style: inside;
-      color: #afe045;
+      color: $Acento;
     }
   }
   
   .growmix__caracteristicas ul li {
     font-size: 1.5em;
-    color: #dddddd;
+    color: $Blanco;
     padding: 5px;
   }
 
@@ -564,6 +564,8 @@ table {
     background-repeat: no-repeat;
     background-size: contain;
   }  
+
+
   /* Fin section sustrato.html */
   
   /* Container Mapa + Form section de pagina Contacto.html */
@@ -587,7 +589,7 @@ table {
     text-align: center;
   
     ::placeholder {
-      color: #fdfdfd4b;
+      color: $Blanco;
       padding: 0px 5px;
     }
   
@@ -659,14 +661,22 @@ table {
   }
   
   .horarios {
+    gap: 10px;
+
     h3 {
       font-size: 1.7em;
-      color: #f1f1f1;
+      color: $Blanco;
+    }
+
+    p {
+      color: rgba(250, 250, 250, 0.5);
     }
   
     ul {
+
       font-size: 1.5em;
       gap: 10px;
+      color: $Blanco;
     }
   }
 
@@ -713,7 +723,7 @@ table {
   
     h2 {
       margin-bottom: 10px;
-      color: #afe045;
+      color: $Acento;
     }
   
     p {
@@ -733,9 +743,6 @@ table {
       margin-right: 100px;
     }
   
-    .horarios h3 {
-      margin-top: 100px;
-    }
   }
   
   /* Fin section de pagina Contacto.html */
@@ -750,7 +757,7 @@ table {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #172b1a;
+    background-color: $bg-footer;
     width: 100%;
     min-height: 30px;
     padding: 5px 5px;
@@ -786,7 +793,7 @@ table {
       font-size: 1.2em;
       border-radius: 5px;
       box-shadow: inset #000000 0px 0px 5px 1px;
-      border: 1px solid #afe045;
+      border: 1px solid $Acento;
     }
   
     a {

@@ -108,7 +108,7 @@ i {
 
 h1 {
   font-size: 3rem;
-  color: #fff;
+  color: #e1e1e1;
 }
 
 h2 {
@@ -135,7 +135,7 @@ h1, h2, h3, h4, h5 {
 
 a {
   text-decoration: none;
-  color: #dddddd;
+  color: #e1e1e1;
 }
 
 p {
@@ -149,7 +149,7 @@ ul {
 
 input, textarea {
   background-color: #3a552b;
-  color: #f1f1f1;
+  color: #e1e1e1;
   font-family: "Roboto", sans-serif;
 }
 
@@ -163,7 +163,7 @@ input, textarea {
   text-align: center;
 }
 .btn a {
-  color: #dddddd;
+  color: #e1e1e1;
 }
 
 /* Diseño boton volver a inicio */
@@ -189,13 +189,13 @@ button a i {
   box-shadow: inset #000000 0px 0px 5px 1px;
   background-color: #293a22;
   border: 1px solid #afe045;
-  color: #ffffff;
+  color: #e1e1e1;
 }
 
 /* Pagina activa actualmente en nuestro NAV */
 /* Inicio Header + NAV */
 .nav-link {
-  color: white;
+  color: #e1e1e1;
 }
 .nav-link:hover {
   color: #afe045;
@@ -213,6 +213,7 @@ button a i {
 }
 
 .section0 {
+  height: 50vh;
   grid-area: section0;
   background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/header/background.jpg);
   background-position: center;
@@ -231,7 +232,7 @@ button a i {
   color: #afe045;
 }
 .section0 p {
-  color: #f1f1f1;
+  color: #e1e1e1;
 }
 
 .header {
@@ -244,7 +245,7 @@ button a i {
 
 .section3 {
   grid-area: section3;
-  color: #f1f1f1;
+  color: #e1e1e1;
 }
 
 .footer {
@@ -267,7 +268,7 @@ button a i {
   box-shadow: inset #000000 0px 0px 5px 1px;
   background-color: #293a22;
   border: 1px solid #afe045;
-  color: #ffffff;
+  color: #e1e1e1;
 }
 
 .section2 {
@@ -281,7 +282,7 @@ button a i {
   box-shadow: inset #000000 0px 0px 5px 1px;
   background-color: #293a22;
   border: 1px solid #afe045;
-  color: #ffffff;
+  color: #e1e1e1;
   gap: 10px;
 }
 .section2 img {
@@ -313,7 +314,7 @@ button a i {
   justify-content: center;
   flex-direction: column;
   height: 40vh;
-  color: #ffffff;
+  color: #e1e1e1;
   background-image: url("../img/catalogo/reprocann.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -325,7 +326,7 @@ button a i {
 .sectionRepro1 {
   text-align: center;
   padding: 5px 0px;
-  color: #dddddd;
+  color: #e1e1e1;
   padding: 20px;
 }
 
@@ -406,7 +407,7 @@ button a i {
 }
 .pie li {
   margin: 5px;
-  color: #ffffff;
+  color: #e1e1e1;
   font-size: 1.2em;
 }
 .pie a {
@@ -428,7 +429,7 @@ table {
 }
 table td {
   padding: 10px;
-  color: #f1f1f1;
+  color: #e1e1e1;
   border: 2px solid #afe045;
   text-align: center;
   border-collapse: collapse;
@@ -441,7 +442,7 @@ table a:hover {
   color: #afe045;
 }
 table h1 {
-  color: #f8f8f8;
+  color: #e1e1e1;
   padding: 5px;
 }
 
@@ -484,7 +485,7 @@ table h1 {
   text-align: center;
 }
 .tabla__caracteristicas p {
-  color: #dddddd;
+  color: #e1e1e1;
   padding: 5px 5px;
   text-align: center;
   margin: 0 50px;
@@ -561,12 +562,12 @@ table h1 {
   color: #95ff00;
 }
 .growmix__caracteristicas p {
-  color: #dddddd;
+  color: #e1e1e1;
 }
 
 #nutrientes {
   font-size: 1.5em;
-  color: #dddddd;
+  color: #e1e1e1;
 }
 #nutrientes li {
   list-style: inside;
@@ -575,7 +576,7 @@ table h1 {
 
 .growmix__caracteristicas ul li {
   font-size: 1.5em;
-  color: #dddddd;
+  color: #e1e1e1;
   padding: 5px;
 }
 
@@ -608,15 +609,15 @@ table h1 {
   text-align: center;
 }
 .container__form-items ::-moz-placeholder {
-  color: rgba(253, 253, 253, 0.2941176471);
+  color: #e1e1e1;
   padding: 0px 5px;
 }
 .container__form-items :-ms-input-placeholder {
-  color: rgba(253, 253, 253, 0.2941176471);
+  color: #e1e1e1;
   padding: 0px 5px;
 }
 .container__form-items ::placeholder {
-  color: rgba(253, 253, 253, 0.2941176471);
+  color: #e1e1e1;
   padding: 0px 5px;
 }
 .container__form-items label {
@@ -692,13 +693,20 @@ table h1 {
   transform: scale(1.1);
 }
 
+.horarios {
+  gap: 10px;
+}
 .horarios h3 {
   font-size: 1.7em;
-  color: #f1f1f1;
+  color: #e1e1e1;
+}
+.horarios p {
+  color: rgba(250, 250, 250, 0.5);
 }
 .horarios ul {
   font-size: 1.5em;
   gap: 10px;
+  color: #e1e1e1;
 }
 
 .container p {
@@ -756,9 +764,6 @@ table h1 {
   }
   .form {
     margin-right: 100px;
-  }
-  .horarios h3 {
-    margin-top: 100px;
   }
 }
 /* Fin section de pagina Contacto.html */
