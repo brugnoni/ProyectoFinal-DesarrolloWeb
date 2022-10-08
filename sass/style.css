@@ -16,7 +16,20 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+i {
+  margin-right: 5px;
+}
+
+.row {
+  margin: 0;
+  padding: 0;
+}
+
 /* Paleta de colores*/
+.bg-growshop {
+  background-color: #172b1a;
+}
+
 .color1 {
   color: #172b1a;
 }
@@ -289,6 +302,7 @@ button a i {
 }
 
 .section0 {
+  grid-area: section0;
   background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/header/background.jpg);
   background-position: center;
   background-size: cover;
@@ -299,20 +313,18 @@ button a i {
   justify-content: center;
   align-items: center;
 }
+.section0 .section1 {
+  grid-area: section1;
+}
 .section0 h1 {
   color: #afe045;
+}
+.section0 p {
+  color: #f1f1f1;
 }
 
 .header {
   grid-area: header;
-}
-
-.section0 {
-  grid-area: section0;
-}
-
-.section1 {
-  grid-area: section1;
 }
 
 .section2 {
@@ -321,30 +333,13 @@ button a i {
 
 .section3 {
   grid-area: section3;
+  color: #f1f1f1;
 }
 
 .footer {
   grid-area: footer;
 }
 
-.containerIndex {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-areas: "header" "main" "footer";
-}
-
-@media screen and (min-width: 992px) {
-  .containerIndex {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto;
-    grid-template-areas: "header header header" "main main main" "footer footer footer";
-  }
-  .main {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-areas: "section0 section0 section1 section1" "section2 section2 section1 section1" "section3 section3 section3 section3";
-  }
-}
 .section1 {
   padding: 10px;
   background: linear-gradient(to top, #172b1a, #97b35a);

@@ -14,9 +14,22 @@
     background-color: #293a22;
     font-family: 'Roboto', sans-serif;
   }
+
+  i {
+    margin-right: 5px;
+  }
+
+  .row {
+    margin: 0; 
+    padding: 0;
+  }
   
   /* Paleta de colores*/
   
+.bg-growshop {
+  background-color: #172b1a;
+}
+
   .color1 {
     color: #172b1a;
   }
@@ -317,71 +330,46 @@
     justify-content: center;    
   }
 
-  .section0 {    
+  .section0 {        
+    grid-area: section0;
     background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/header/background.jpg);
     background-position: center;
     background-size: cover;
-    padding: 50px;
-    h1 {
-      color: #afe045;
-    }        
+    padding: 50px;     
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;  
+    align-items: center; 
+
+  .section1 {    
+    grid-area: section1;
+  }
+    
+    h1 {
+      color: #afe045;
+    }   
+
+    p {color: #f1f1f1;}
   }
 
   .header {
     grid-area: header;
   }
-  .section0 {    
-    grid-area: section0;
-  }
-  
-  .section1 {
-    grid-area: section1;
-  }
-  
+
   .section2 {
     grid-area: section2;
   }
   
   .section3 {
     grid-area: section3;
+    color: #f1f1f1;
   }
   
   .footer {
     grid-area: footer;
   }
-
-  .containerIndex {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-areas: 
-    "header"
-    "main"
-    "footer";
-  }
-  
-  @media screen and (min-width: 992px) {
-    .containerIndex {
-      grid-template-columns: repeat(3, 1fr);
-      grid-template-rows: auto;
-      grid-template-areas: 
-      "header header header"
-      "main main main"
-      "footer footer footer";
-    }
-    .main {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      grid-template-areas:
-      "section0 section0 section1 section1"
-      "section2 section2 section1 section1"
-      "section3 section3 section3 section3";    }
-  }
-  
+   
   .section1 {
     padding: 10px;
     background: linear-gradient(to top, #172b1a, #97b35a);
