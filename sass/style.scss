@@ -29,9 +29,7 @@
     padding: 0;
   }
 
-  .nav-link {
-    color: white; !important
-  }
+ 
   
   /* Paleta de colores*/
   
@@ -166,7 +164,16 @@
   /* Pagina activa actualmente en nuestro NAV */
   
   /* Inicio Header + NAV */
- 
+
+  
+  .nav-link {
+    color: white;
+
+    &:hover {
+      color: #afe045;
+    }
+  }
+
 
   /* Fin Header + NAV */
 
@@ -484,8 +491,7 @@ table {
   
   /* Fin section de pagina Tablas.html */
   
-  /* Inicio section sustrato.html */
-  
+  /* Inicio section sustrato.html */  
   .container__growmix {
     display: flex;
     width: 100%;
@@ -499,18 +505,24 @@ table {
     display: flex;
     align-items: center;
     justify-content: center;
-  
+  }
+
+  @media screen and (min-width: 998px) {
     video {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin: 20px 50px;
+      width: 500px;
+      height: 500px;
+    }
+  }
+
+  @media screen and (max-width: 998px) {
+    video {
+      width: 400px;
+      height: 50vh;
     }
   }
   
   .growmix__caracteristicas {
     display: flex;
-    width: 100%;
     flex-flow: column nowrap;
     align-items: center;
     justify-content: center;
@@ -519,6 +531,10 @@ table {
     h1 {
       font-size: 4em;
       color: #95ff00;
+    }
+
+    p{
+      color:#dddddd
     }
   }
   
@@ -537,7 +553,17 @@ table {
     color: #dddddd;
     padding: 5px;
   }
-  
+
+  .sustratoMain {
+    height: 100vh;
+  }
+
+  .sustratoP {    
+    background-image: url(/img/productos/sustratos/sustratos.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }  
   /* Fin section sustrato.html */
   
   /* Container Mapa + Form section de pagina Contacto.html */
@@ -642,6 +668,12 @@ table {
       font-size: 1.5em;
       gap: 10px;
     }
+  }
+
+  .container {
+    p{
+    color:#dddddd
+  }
   }
   
   .horarios__container {

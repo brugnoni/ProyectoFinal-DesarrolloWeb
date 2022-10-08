@@ -73,10 +73,6 @@ i {
   padding: 0;
 }
 
-a {
-  color: white;
-}
-
 /* Paleta de colores*/
 .bg-growshop {
   background-color: #172b1a;
@@ -157,7 +153,6 @@ input, textarea {
   font-family: "Roboto", sans-serif;
 }
 
-
 /* Diseño boton volver a inicio */
 .btn {
   border-radius: 5px;
@@ -199,6 +194,13 @@ button a i {
 
 /* Pagina activa actualmente en nuestro NAV */
 /* Inicio Header + NAV */
+.nav-link {
+  color: white;
+}
+.nav-link:hover {
+  color: #afe045;
+}
+
 /* Fin Header + NAV */
 /* Inicio Index.html  */
 .main {
@@ -208,15 +210,6 @@ button a i {
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-
-
-.nav-link {
-  color: white;
-}
-
-.nav-link:hover {
-  color: #afe045;
 }
 
 .section0 {
@@ -543,16 +536,21 @@ table h1 {
   align-items: center;
   justify-content: center;
 }
-.growmix__video video {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 20px 50px;
-}
 
+@media screen and (min-width: 998px) {
+  video {
+    width: 500px;
+    height: 500px;
+  }
+}
+@media screen and (max-width: 998px) {
+  video {
+    width: 400px;
+    height: 50vh;
+  }
+}
 .growmix__caracteristicas {
   display: flex;
-  width: 100%;
   flex-flow: column nowrap;
   align-items: center;
   justify-content: center;
@@ -561,6 +559,9 @@ table h1 {
 .growmix__caracteristicas h1 {
   font-size: 4em;
   color: #95ff00;
+}
+.growmix__caracteristicas p {
+  color: #dddddd;
 }
 
 #nutrientes {
@@ -576,6 +577,17 @@ table h1 {
   font-size: 1.5em;
   color: #dddddd;
   padding: 5px;
+}
+
+.sustratoMain {
+  height: 100vh;
+}
+
+.sustratoP {
+  background-image: url(/img/productos/sustratos/sustratos.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 /* Fin section sustrato.html */
@@ -687,6 +699,10 @@ table h1 {
 .horarios ul {
   font-size: 1.5em;
   gap: 10px;
+}
+
+.container p {
+  color: #dddddd;
 }
 
 .horarios__container {
