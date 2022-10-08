@@ -73,6 +73,10 @@ i {
   padding: 0;
 }
 
+a {
+  color: white;
+}
+
 /* Paleta de colores*/
 .bg-growshop {
   background-color: #172b1a;
@@ -153,6 +157,7 @@ input, textarea {
   font-family: "Roboto", sans-serif;
 }
 
+
 /* Diseño boton volver a inicio */
 .btn {
   border-radius: 5px;
@@ -203,6 +208,15 @@ button a i {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+
+.nav-link {
+  color: white;
+}
+
+.nav-link:hover {
+  color: #afe045;
 }
 
 .section0 {
