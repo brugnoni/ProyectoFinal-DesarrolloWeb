@@ -153,7 +153,7 @@ input, textarea {
   font-family: "Roboto", sans-serif;
 }
 
-/* Diseño boton volver a inicio */
+/* Diseño boton */
 .btn {
   border-radius: 5px;
   box-shadow: inset #000000 0px 0px 5px 1px;
@@ -329,9 +329,6 @@ button a i {
   padding: 20px;
 }
 
-#galeriaFotos {
-  gap: 10em;
-}
 #galeriaFotos p {
   border-radius: 5px;
   box-shadow: inset #000000 0px 0px 5px 1px;
@@ -345,6 +342,7 @@ button a i {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  margin-bottom: 20px;
 }
 .galeria1 img {
   width: 100%;
@@ -355,6 +353,7 @@ button a i {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  margin-bottom: 20px;
 }
 .galeria2 img {
   width: 100%;
@@ -365,6 +364,7 @@ button a i {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  margin-bottom: 20px;
 }
 .galeria3 img {
   width: 100%;
@@ -375,6 +375,7 @@ button a i {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  margin-bottom: 20px;
 }
 .galeria4 img {
   width: 100%;
@@ -385,6 +386,7 @@ button a i {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  margin-bottom: 20px;
 }
 .galeria5 img {
   width: 100%;
@@ -395,6 +397,7 @@ button a i {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  margin-bottom: 20px;
 }
 .galeria6 img {
   width: 100%;
@@ -415,6 +418,7 @@ button a i {
 
 .sectionbtn {
   text-align: center;
+  padding: 10px 5px;
 }
 
 /* Cierre section de página Reprocann.html */
