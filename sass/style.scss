@@ -192,7 +192,8 @@
     justify-content: center;
     align-items: center; 
 
-  .section1 {    
+  .section1 {  
+    height: 20vh;  
     grid-area: section1;
     }
     
@@ -209,6 +210,7 @@
 
   .section2 {
     grid-area: section2;
+    height: 20vh;
   }
   
   .section3 {
@@ -229,6 +231,7 @@
     justify-content: center;
     gap: 10px;
     border: 1px solid white;
+    height: 30vh;
   }
   
   .boton {
@@ -252,6 +255,7 @@
     border: 1px solid $Acento;
     color: $Blanco;
     gap: 10px;
+    height: 30vh;
   
     img {
       width: 50px;

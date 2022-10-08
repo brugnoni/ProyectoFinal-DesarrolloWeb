@@ -225,6 +225,7 @@ button a i {
   align-items: center;
 }
 .section0 .section1 {
+  height: 20vh;
   grid-area: section1;
 }
 .section0 h1 {
@@ -240,6 +241,7 @@ button a i {
 
 .section2 {
   grid-area: section2;
+  height: 20vh;
 }
 
 .section3 {
@@ -260,6 +262,7 @@ button a i {
   justify-content: center;
   gap: 10px;
   border: 1px solid white;
+  height: 30vh;
 }
 
 .boton {
@@ -283,6 +286,7 @@ button a i {
   border: 1px solid #afe045;
   color: #e1e1e1;
   gap: 10px;
+  height: 30vh;
 }
 .section2 img {
   width: 50px;
