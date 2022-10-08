@@ -159,8 +159,7 @@ input, textarea {
   box-shadow: inset #000000 0px 0px 5px 1px;
   background-color: #293a22;
   border: 1px solid #afe045;
-  margin: 5px;
-  text-align: center;
+  text-decoration: none;
 }
 .btn a {
   color: #e1e1e1;

@@ -115,17 +115,21 @@
   
   /* Diseño boton volver a inicio */
   
-  .btn {
-    border-radius: 5px;
-    box-shadow: inset #000000 0px 0px 5px 1px;
-    background-color: $Background;
-    border: 1px solid $Acento;
-    margin: 5px;
-    text-align: center;
+  // .btn {
+  //   border-radius: 5px;
+  //   box-shadow: inset #000000 0px 0px 5px 1px;
+  //   background-color: $Background;
+  //   border: 1px solid $Acento;
+  //   margin: 5px;
+  //   text-align: center;
   
-    a {
-      color: $Blanco;
-    }
+  //   a {
+  //     color: $Blanco;
+  //   }
+  // }
+
+  .btn {
+    @include boton();
   }
   
   /* Diseño boton volver a inicio */
