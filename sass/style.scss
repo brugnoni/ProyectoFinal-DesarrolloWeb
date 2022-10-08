@@ -1,3 +1,6 @@
+@import "_mixins.scss";
+@import "_reset.scss";
+
 * {
     padding: 0;
     margin: 0;
@@ -29,6 +32,8 @@
 .bg-growshop {
   background-color: #172b1a;
 }
+
+
 
   .color1 {
     color: #172b1a;
@@ -319,6 +324,8 @@
   }
   
   /* Fin Header + NAV */
+
+ /* Inicio Index.html  */ 
   
   
   .main {
@@ -423,6 +430,8 @@
     justify-content: center;
     padding: 10px;
   }
+
+  /* fin de Index.html*/
   
   /* Inicio section de página Reprocann.html */
   
@@ -449,8 +458,7 @@
   }
   
   #galeriaFotos {
-    gap: 1em;
-    margin-bottom: 10px;
+    gap: 10em;
     p {
       border-radius: 5px;
       box-shadow: inset #000000 0px 0px 5px 1px;
@@ -459,17 +467,7 @@
       padding: 5px;
     }
   }
-
-  @media screen and (min-width: 992px) {
-    #galeriaFotos {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      grid-template-areas: 
-      "galeria1 galeria2 galeria3"
-      "galeria4 galeria5 galeria6";
-    }
-  }
-
+  
   @mixin galerias {
     box-shadow: 0px 4px 10px 0 #afe045;
     display: flex;
@@ -479,25 +477,25 @@
       width: 100%;
     }
   }
-
-  .galeria1 {
-    @include galerias();
-  }
-  .galeria2 {
-    @include galerias();
-  }
-  .galeria3 {
-    @include galerias();
-  }
-  .galeria4 {
-    @include galerias();
-  }
-  .galeria5 {
-    @include galerias();
-  }
-  .galeria6 {
-    @include galerias();
-  }
+  
+.galeria1 {
+     @include galerias();
+}
+.galeria2 {
+   @include galerias();
+}
+.galeria3 {
+   @include galerias();
+}
+.galeria4 {
+  @include galerias();
+}
+.galeria5 {
+ @include galerias();
+}
+.galeria6 {
+ @include galerias();
+} 
   .pie {
     text-align: center;
     padding: 5px;

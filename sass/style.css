@@ -1,4 +1,52 @@
 @charset "UTF-8";
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, code, em, img, small, strike, strong, sub, sup, tt, b, u, i, ol, ul, li, fieldset, form, label, table, caption, tbody, tfoot, thead, tr, th, td, main, canvas, embed, footer, header, nav, section, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: none;
+     -moz-text-size-adjust: none;
+          text-size-adjust: none;
+}
+
+footer, header, nav, section, main {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input {
+  border-radius: 0;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -292,6 +340,7 @@ button a i {
   }
 }
 /* Fin Header + NAV */
+/* Inicio Index.html  */
 .main {
   grid-area: main;
   text-align: center;
@@ -393,6 +442,7 @@ button a i {
   padding: 10px;
 }
 
+/* fin de Index.html*/
 /* Inicio section de página Reprocann.html */
 #heroReprocann {
   display: flex;
@@ -418,8 +468,7 @@ button a i {
 }
 
 #galeriaFotos {
-  gap: 1em;
-  margin-bottom: 10px;
+  gap: 10em;
 }
 #galeriaFotos p {
   border-radius: 5px;
@@ -429,13 +478,6 @@ button a i {
   padding: 5px;
 }
 
-@media screen and (min-width: 992px) {
-  #galeriaFotos {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: "galeria1 galeria2 galeria3" "galeria4 galeria5 galeria6";
-  }
-}
 .galeria1 {
   box-shadow: 0px 4px 10px 0 #afe045;
   display: flex;

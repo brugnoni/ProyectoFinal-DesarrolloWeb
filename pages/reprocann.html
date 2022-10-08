@@ -5,127 +5,167 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=<device-width>, initial-scale=1.0">
 		<title>BluntGrowshop - Sitio Oficial</title>
-		<link rel="shortcut icon" href="../img/iconos/favicon.jpg" type="image/x-icon">	
+		<link rel="shortcut icon" href="img/iconos/favicon.jpg" type="image/x-icon">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">	
 		<link rel="stylesheet" href="../sass/style.css">
 		<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
-		
+	
 	</head>
 <body>
-	<header class="header">
-		<div class="nav__logo">
-			<a href="../index.html"><img src="../img/iconos/favicon.jpg" alt="Logo" class="container__logo-img"></a>
+	<nav class="navbar navbar-expand-lg bg-growshop navbar-dark col-12">
+		<div class="container-fluid">
+			<a class="navbar-brand fs-2" href="../index.html">Blunt <span class="color-acento">Growshop</span>
+			</a>
+
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+
+			<span class="navbar-toggler-icon "></span>
+			</button>
+			<div class="collapse navbar-collapse text-center fs-4" id="navbarNav">
+				<ul class="navbar-nav ms-auto">
+					<li class="nav-item">
+						<a href="../index.html" class="nav-link">
+							<i class="fa-solid fa-house"></i>Inicio
+						</a>
+					</li>
+					<li class="nav-item">
+						<a href="./pages/reprocann.html" class="nav-link"><i class="fa-solid fa-cannabis"></i>Reprocann
+						</a>
+					</li>
+					<li class="nav-item">
+						<a href="./pages/tablas.html" class="nav-link"><i class="fa-solid fa-table"></i>Tablas de cultivo</a>
+					</li>
+					<li class="nav-item">
+						<a href="./pages/sustratos.html" class="nav-link"><i class="fa-solid fa-sack-xmark"></i>Sustratos
+						</a>
+					</li>
+					<li class="nav-item">
+					<a href="./pages/contacto.html" class="nav-link"><i class="fa-solid fa-envelope "></i>Contacto
+					</a>
+					</li>
+				</ul>
+			</div>
 		</div>
-
-		<div class="navigation">
-
-			<input type="checkbox" class="toggle-menu">
-			<div class="hamburguesa"></div>
-		
-			<ul class="menu">
-				<li >					
-					<a href="../index.html"><i class="fa-solid fa-house"></i>Inicio</a>
-				</li>
-				<li class="active">					
-					<a href="../pages/reprocann.html"><i class="fa-solid fa-cannabis"></i>Reprocann</a>
-				</li>
-				<li>
-					<a href="../pages/tablas.html"><i class="fa-solid fa-table"></i>Tablas de cultivo</a>
-				</li>
-				<li>			
-					<a href="../pages/sustratos.html"><i class="fa-solid fa-sack-xmark"></i>Sustratos</a>
-				</li>
-				<li> 
-					<a href="../pages/contacto.html"><i class="fa-solid fa-envelope"></i>Contacto</a>
-				</li>
-			</ul>
-		</div>
-</header>	
-
+	</nav>
 	<main class="main__repro">
+
+		<div class="container">
 		<section id="heroReprocann" alt="Header Reprocann" class="sectionRepro0">
 
 		</section>		
+		</div>
 
+		<div class="container">
 		<section class="sectionRepro1">
 				<h2>Así podes hacerlo:</h2>
 				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Suscipit expedita quia mollitia corrupti debitis ducimus facere enim. <br>
 				Dolorem quam, enim corrupti ullam maxime voluptates, eligendi sint vel veniam provident quos!</p>
 		</section>
+		</div>
 
+		<div class="container">
 		<section id="galeriaFotos">
-			<div class="galeria1">
-				<div class="foto">
-					<img src="../img/reprocann/paso1.jpg" alt="Paso1">
+
+			<div class="row">
+
+				<div class="galeria1 col-md-4">
+
+					<div class="foto">
+						<img src="../img/reprocann/paso1.jpg" alt="Paso1">
+					</div>
+
+					<div class="pie">
+						<p class="color-acento">Paso 1</p>
+						<ul>
+							<li>Crea un usuario en la APP MiArgentina</li>
+							<li>Ingresa <a href="https://www.argentina.gob.ar/miargentina" target="_blank"> Aquí</a></li>						
+						</ul>
+					</div>
+
 				</div>
-				<div class="pie">
-					<p class="color-acento">Paso 1</p>
-					<ul>
-						<li>Crea un usuario en la APP MiArgentina</li>
-						<li>Ingresa <a href="https://www.argentina.gob.ar/miargentina" target="_blank"> Aquí</a></li>						
-					</ul>
+
+				<div class="galeria2 col-md-4">
+
+					<div class="foto">
+						<img src="../img/reprocann/paso2.jpg" alt="Paso2">
+					</div>
+
+					<div class="pie">
+						<p class="color-acento">Paso 2</p>
+						<ul>
+							<li>Con tu usuario y contraseña</li>
+							<li>Registrate <a href="https://reprocann.msal.gob.ar/auth" target="_blank">Aquí</a></li>						
+						</ul>
+					</div>
+
+				</div>
+
+				<div class="galeria3 col-md-4">
+
+					<div class="foto">
+						<img src="../img/reprocann/paso3.jpg" alt="Paso3">
+					</div>
+
+					<div class="pie">
+						<p class="color-acento">Paso 3</p>
+						<ul>
+							<li>Selecciona la Preferencia de Cultivo:</li>
+							<li>Persona en tratamiento</li>
+							<li>Persona que cultiva para otro</li>						
+						</ul>
+					</div>
+
+				</div>
+
+				<div class="galeria4 col-md-4">
+
+					<div class="foto">
+						<img src="../img/reprocann/paso4.jpg" alt="Paso4">
+					</div>
+
+					<div class="pie">
+						<p class="color-acento">Paso 4</p>
+						<ul>
+							<li>Vinculación con Médico:</li>
+							<li>Utilizando el codigo generado por la App</li>
+							<li>Realiza la vinculación con un medico de confianza</li>
+													
+						</ul>
+					</div>
+
+				</div>
+
+				<div class="galeria5 col-md-4">
+
+					<div class="foto">
+						<img src="../img/reprocann/paso5.jpg" alt="Paso5">
+					</div>
+
+					<div class="pie">
+						<p class="color-acento">Listo!</p>					
+					</div>
+
+				</div>
+
+				<div class="galeria6 col-md-4">
+
+					<div class="foto">
+						<img src="../img/reprocann/paso6.jpg" alt="Paso6">
+					</div>
+
+					<div class="pie">
+						<p class="color-acento"><a href="../pages/contacto.html">Visítanos para abastecerte. Click Aquí</a></p>					
+					</div>
+
 				</div>
 			</div>
-			<div class="galeria2">
-				<div class="foto">
-					<img src="../img/reprocann/paso2.jpg" alt="Paso2">
-				</div>
-				<div class="pie">
-					<p class="color-acento">Paso 2</p>
-					<ul>
-						<li>Con tu usuario y contraseña</li>
-						<li>Registrate <a href="https://reprocann.msal.gob.ar/auth" target="_blank">Aquí</a></li>						
-					</ul>
-				</div>
-			</div>
-			<div class="galeria3">
-				<div class="foto">
-					<img src="../img/reprocann/paso3.jpg" alt="Paso3">
-				</div>
-				<div class="pie">
-					<p class="color-acento">Paso 3</p>
-					<ul>
-						<li>Selecciona la Preferencia de Cultivo:</li>
-						<li>Persona en tratamiento</li>
-						<li>Persona que cultiva para otro</li>						
-					</ul>
-				</div>
-			</div>
-			<div class="galeria4">
-				<div class="foto">
-					<img src="../img/reprocann/paso4.jpg" alt="Paso4">
-				</div>
-				<div class="pie">
-					<p class="color-acento">Paso 4</p>
-					<ul>
-						<li>Vinculación con Médico:</li>
-						<li>Utilizando el codigo generado por la App</li>
-						<li>Realiza la vinculación con un medico de confianza</li>
-												
-					</ul>
-				</div>
-			</div>
-			<div class="galeria5">
-				<div class="foto">
-					<img src="../img/reprocann/paso5.jpg" alt="Paso5">
-				</div>
-				<div class="pie">
-					<p class="color-acento">Listo!</p>					
-				</div>
-			</div>
-			<div class="galeria6">
-				<div class="foto">
-					<img src="../img/reprocann/paso6.jpg" alt="Paso6">
-				</div>
-				<div class="pie">
-					<p class="color-acento"><a href="../pages/contacto.html">Visítanos para abastecerte. Click Aquí</a></p>					
-				</div>
-			</div>
-		</div>	
+		</div>
 		</section>
 
 		<section class="sectionbtn">
 			<button class="btn"><a href="../index.html"><i class="fa-solid fa-house"></i>Volver al Inicio</a></button>
-		</section>		
+		</section>	
+	</div>	
 
 	</main>		
 	<footer class="footer">
@@ -150,6 +190,7 @@
 		</div>
 	</footer>
 		<!--  Script de fontawesome para los iconos -->
-	<script src="https://kit.fontawesome.com/59785414e0.js" crossorigin="anonymous"></script>
+	<script src="https://kit.fontawesome.com/59785414e0.js" crossorigin="anonymous"></script>	
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 </body>
 </html>
