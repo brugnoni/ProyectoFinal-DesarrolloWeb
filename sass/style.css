@@ -221,8 +221,9 @@ button a i {
   height: 50vh;
   grid-area: section0;
   background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/header/background.jpg);
-  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   padding: 50px;
   text-align: center;
   flex-direction: column;
@@ -304,9 +305,9 @@ button a i {
   height: 50vh;
   gap: 10px;
   background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/catalogo/fertilizantes.jpg);
-  background-position: cover;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   flex-direction: column;
   display: flex;
   justify-content: center;
@@ -629,13 +630,6 @@ table h1 {
 
 .sustratoMain {
   height: 100vh;
-}
-
-.sustratoP {
-  background-image: url(/img/productos/sustratos/sustratos.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
 }
 
 /* Fin section sustrato.html */
