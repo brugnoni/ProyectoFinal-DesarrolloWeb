@@ -129,7 +129,11 @@ h5 {
   font-size: 1.1em;
 }
 
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
   line-height: 1.1em;
 }
 
@@ -147,7 +151,8 @@ ul {
   list-style: none;
 }
 
-input, textarea {
+input,
+textarea {
   background-color: #3a552b;
   color: #e1e1e1;
   font-family: "Roboto", sans-serif;
@@ -206,9 +211,10 @@ button a i {
   grid-area: main;
   text-align: center;
   gap: 10px;
-  display: flex;
   flex-direction: column;
+  display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .section0 {
@@ -219,8 +225,8 @@ button a i {
   background-size: cover;
   padding: 50px;
   text-align: center;
-  display: flex;
   flex-direction: column;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
@@ -256,10 +262,10 @@ button a i {
 .section1 {
   padding: 10px;
   background: linear-gradient(to top, #172b1a, #97b35a);
-  display: flex;
   flex-direction: column;
-  align-items: center;
+  display: flex;
   justify-content: center;
+  align-items: center;
   gap: 10px;
   border: 1px solid white;
   height: 30vh;
@@ -274,10 +280,10 @@ button a i {
 }
 
 .section2 {
-  display: flex;
   flex-direction: column;
-  align-items: center;
+  display: flex;
   justify-content: center;
+  align-items: center;
   padding: 10px;
   background: linear-gradient(to bottom, #172b1a, #849d4f);
   border-radius: 5px;
@@ -301,10 +307,10 @@ button a i {
   background-position: cover;
   background-repeat: no-repeat;
   background-size: cover;
-  display: flex;
   flex-direction: column;
-  align-items: center;
+  display: flex;
   justify-content: center;
+  align-items: center;
   padding: 10px;
 }
 
@@ -312,16 +318,16 @@ button a i {
 /* Inicio section de página Reprocann.html */
 #heroReprocann {
   display: flex;
+  justify-content: center;
   align-items: center;
   text-align: center;
-  justify-content: center;
   flex-direction: column;
   height: 40vh;
   color: #e1e1e1;
   background-image: url("../img/catalogo/reprocann.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center center;
+  background-position: center;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -464,6 +470,24 @@ table h1 {
     border: #000000 2px solid;
   }
 }
+@media screen and (max-width: 336px) {
+  #tabla table {
+    transform: scale(0.8);
+  }
+  .growmix__video video {
+    width: 90vw;
+  }
+}
+@media screen and (max-width: 405px) {
+  .growmix__video video {
+    width: 90vw;
+  }
+}
+@media screen and (max-width: 329px) {
+  #tabla table {
+    width: 90vw;
+  }
+}
 /* Tabla de Cultivos */
 /* Inicio Tabla Azteka Seccion  */
 #tabla__img-header img {
@@ -472,16 +496,16 @@ table h1 {
 }
 
 .container__tabla {
-  display: flex;
   flex-direction: column;
-  align-items: center;
+  display: flex;
   justify-content: center;
+  align-items: center;
 }
 .container__tabla img {
-  width: 100%;
-  height: 400px;
-  -o-object-fit: scale-down;
-     object-fit: scale-down;
+  width: 90%;
+  height: 50vh;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .tabla__caracteristicas {
@@ -524,25 +548,41 @@ table h1 {
     display: none;
   }
 }
-#tabla__azteka {
-  margin-top: 20px;
+#tabla__azteka img:hover {
+  transform: scale(1.05);
+  transition: all 1.5s;
+}
+
+#tabla__namaste img:hover {
+  transform: scale(1.05);
+  transition: all 1.5s;
+}
+
+#tabla__topcrop img:hover {
+  transform: scale(1.05);
+  transition: all 1.5s;
+}
+
+#tabla__kawsay img:hover {
+  transform: scale(1.05);
+  transition: all 1.5s;
 }
 
 /* Fin section de pagina Tablas.html */
 /* Inicio section sustrato.html */
 .container__growmix {
-  display: flex;
   width: 100%;
   flex-direction: row;
   flex-wrap: nowrap;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .growmix__video {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 }
 
 @media screen and (min-width: 998px) {
@@ -559,9 +599,9 @@ table h1 {
 }
 .growmix__caracteristicas {
   display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
   padding: 5px;
 }
 .growmix__caracteristicas h1 {
@@ -646,7 +686,8 @@ table h1 {
   text-align: center;
 }
 
-.form__submit, .form__cancel {
+.form__submit,
+.form__cancel {
   padding: 5px;
   margin: 5px;
 }
@@ -656,9 +697,7 @@ table h1 {
 }
 
 .form__caja {
-  display: flex;
   flex-direction: column;
-  align-items: center;
   margin-top: 5px;
 }
 
@@ -721,28 +760,29 @@ table h1 {
 }
 
 .horarios__container {
-  display: flex;
   padding-top: 20px;
   text-align: center;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .horarios {
   text-align: center;
-  height: 50vh;
-  display: flex;
+  padding: 50px 0px;
   flex-direction: column;
+  display: flex;
   justify-content: center;
+  align-items: center;
   font-size: 1.7em;
 }
 
 .mapa {
   display: flex;
-  flex-direction: column;
-  text-align: center;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  text-align: center;
   gap: 10px;
   margin-bottom: 20px;
 }
@@ -769,9 +809,6 @@ table h1 {
     grid-template-areas: "img-grid img-grid img-grid" "horarios horarios form" "mapa mapa mapa";
     gap: 20px;
   }
-  .form {
-    margin-right: 100px;
-  }
 }
 /* Fin section de pagina Contacto.html */
 /* Inicio Footer */
@@ -792,7 +829,7 @@ footer {
 /* Div footer para el h3 de la izquierda*/
 .container__footer-titulo h3 {
   display: flex;
-  color: #3a552b;
+  color: #fff;
   font-size: 1.2em;
   font-weight: bold;
 }

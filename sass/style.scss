@@ -3,371 +3,373 @@
 @import "_variables.scss";
 
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-  }
-  
-  html {
-    font-size: 62.5%;
-    scroll-behavior: smooth;
-  }
-  
-  body {
-    position: relative;
-    background-color: #293a22;
-    font-family: 'Roboto', sans-serif;
-  }
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 
-  i {
-    margin-right: 5px;
-  }
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
 
-  .row {
-    margin: 0; 
-    padding: 0;
-  }
+body {
+  position: relative;
+  background-color: #293a22;
+  font-family: 'Roboto', sans-serif;
+}
 
- 
-  
-  /* Paleta de colores*/
-  
-  .bg-growshop {
-   background-color: #172b1a;
-  }
+i {
+  margin-right: 5px;
+}
+
+.row {
+  margin: 0;
+  padding: 0;
+}
 
 
 
-  .color1 {
-    color: #172b1a;
-  }
-  
-  .color2 {
-    color: #293a22;
-  }
-  
-  .color3 {
-    color: #3a552b;
-  }
-  
-  .color4 {
-    color: #59723d;
-  }
-  
-  .color5 {
-    color: #849d4f;
-  }
-  
-  .color6 {
-    color: #97b35a;
-  }
-  
-  .color-acento {
-    color: #afe045;
-  }
-  
-  h1 {
-    font-size: 3rem;
-    color: $Blanco;
-  }
-  
-  h2 {
-    font-size: 2.50rem;
-    color: $Acento;
-    text-align: center;
-  }
-  
-  h3 {
-    font-size: 2rem;
-  }
-  
-  h4 {
-    font-size: 1.5em;
-  }
-  
-  h5 {
-    font-size: 1.1em;
-  }
-  
-  h1, h2, h3, h4, h5 {
-    line-height: 1.1em;
-  }
-  
+/* Paleta de colores*/
+
+.bg-growshop {
+  background-color: #172b1a;
+}
+
+
+
+.color1 {
+  color: #172b1a;
+}
+
+.color2 {
+  color: #293a22;
+}
+
+.color3 {
+  color: #3a552b;
+}
+
+.color4 {
+  color: #59723d;
+}
+
+.color5 {
+  color: #849d4f;
+}
+
+.color6 {
+  color: #97b35a;
+}
+
+.color-acento {
+  color: #afe045;
+}
+
+h1 {
+  font-size: 3rem;
+  color: $Blanco;
+}
+
+h2 {
+  font-size: 2.50rem;
+  color: $Acento;
+  text-align: center;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 1.5em;
+}
+
+h5 {
+  font-size: 1.1em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  line-height: 1.1em;
+}
+
+a {
+  text-decoration: none;
+  color: $Blanco;
+}
+
+p {
+  font-size: 1.7em;
+  line-height: 1.2em;
+}
+
+ul {
+  list-style: none;
+}
+
+input,
+textarea {
+  background-color: #3a552b;
+  color: $Blanco;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Diseño boton */
+
+.btn {
+  @include boton();
+}
+
+/* Diseño boton volver a inicio */
+
+/* Inicio Diseño de botones */
+
+button {
+  font-size: 1em;
+  font-weight: bold;
+  padding: 5px 5px;
+  text-align: center;
+
   a {
-    text-decoration: none;
-    color: $Blanco;
-  }
-  
-  p {
-    font-size: 1.7em;
-    line-height: 1.2em;
-  }
-  
-  ul {
-    list-style: none;
-  }
-  
-  input, textarea {
-    background-color: #3a552b;
-    color: $Blanco;
-    font-family: 'Roboto', sans-serif;
-  }
-  
-  /* Diseño boton */
-
-  .btn {
-    @include boton();
-  }
-  
-  /* Diseño boton volver a inicio */
-  
-  /* Inicio Diseño de botones */
-  
-  button {
+    color: #000000;
     font-size: 1em;
-    font-weight: bold;
-    padding: 5px 5px;
-    text-align: center;
-  
-    a {
-      color: #000000;
-      font-size: 1em;
-  
-      i {
-        margin-right: 5px;
-      }
+
+    i {
+      margin-right: 5px;
     }
   }
-  
-  /* Fin Diseño de botones */
-  
-  /* Pagina activa actualmente en nuestro NAV */
-  
-  .active {
-    border-radius: 5px;
-    box-shadow: inset #000000 0px 0px 5px 1px;
-    background-color: $Background;
-    border: 1px solid $Acento;
-    color: $Blanco;
+}
+
+/* Fin Diseño de botones */
+
+/* Pagina activa actualmente en nuestro NAV */
+
+.active {
+  border-radius: 5px;
+  box-shadow: inset #000000 0px 0px 5px 1px;
+  background-color: $Background;
+  border: 1px solid $Acento;
+  color: $Blanco;
+}
+
+/* Pagina activa actualmente en nuestro NAV */
+
+/* Inicio Header + NAV */
+
+
+.nav-link {
+  color: $Blanco;
+
+  &:hover {
+    color: $Acento;
   }
-  
-  /* Pagina activa actualmente en nuestro NAV */
-  
-  /* Inicio Header + NAV */
-
-  
-  .nav-link {
-    color: $Blanco;
-
-    &:hover {
-      color: $Acento;
-    }
-  }
+}
 
 
-  /* Fin Header + NAV */
+/* Fin Header + NAV */
 
- /* Inicio Index.html  */ 
-  
-  
-  .main {
-    grid-area: main;
-    text-align: center;
-    gap: 10px;    
-    display: flex;
-    flex-direction: column;
-    justify-content: center;    
-  }
+/* Inicio Index.html  */
 
-  .section0 {        
-    height: 50vh;
-    grid-area: section0;
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/header/background.jpg);
-    background-position: center;
-    background-size: cover;
-    padding: 50px;     
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; 
 
-  .section1 {  
-    height: 20vh;  
-    grid-area: section1;
-    }
-    
-    h1 {
-      color: $Acento;
-    }   
+.main {
+  grid-area: main;
+  text-align: center;
+  gap: 10px;
+  flex-direction: column;
+  @include flexible;
+}
 
-    p {color: $Blanco;}
-  }
+.section0 {
+  height: 50vh;
+  grid-area: section0;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/header/background.jpg);
+  background-position: center;
+  background-size: cover;
+  padding: 50px;
+  text-align: center;
+  flex-direction: column;
+  @include flexible;
 
-  .header {
-    grid-area: header;
-  }
-
-  .section2 {
-    grid-area: section2;
-    height: 20vh;
-  }
-  
-  .section3 {
-    grid-area: section3;
-    color: $Blanco;
-  }
-  
-  .footer {
-    grid-area: footer;
-  }
-   
   .section1 {
-    padding: 10px;
-    background: linear-gradient(to top, #172b1a, #97b35a);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    border: 1px solid white;
-    height: 30vh;
+    height: 20vh;
+    grid-area: section1;
   }
-  
-  .boton {
-    border-radius: 20px;
-    box-shadow: inset #000000 0px 0px 5px 1px;
-    background-color: $Background;
-    border: 1px solid $Acento;
+
+  h1 {
+    color: $Acento;
+  }
+
+  p {
     color: $Blanco;
   }
-  
-  .section2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
-    background: linear-gradient(to bottom, #172b1a, #849d4f);
+}
+
+.header {
+  grid-area: header;
+}
+
+.section2 {
+  grid-area: section2;
+  height: 20vh;
+}
+
+.section3 {
+  grid-area: section3;
+  color: $Blanco;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+.section1 {
+  padding: 10px;
+  background: linear-gradient(to top, #172b1a, #97b35a);
+  flex-direction: column;  
+  @include flexible;
+  gap: 10px;
+  border: 1px solid white;
+  height: 30vh;
+}
+
+.boton {
+  border-radius: 20px;
+  box-shadow: inset #000000 0px 0px 5px 1px;
+  background-color: $Background;
+  border: 1px solid $Acento;
+  color: $Blanco;
+}
+
+.section2 {
+  flex-direction: column;  
+  @include flexible;
+  padding: 10px;
+  background: linear-gradient(to bottom, #172b1a, #849d4f);
+  border-radius: 5px;
+  box-shadow: inset #000000 0px 0px 5px 1px;
+  background-color: $Background;
+  border: 1px solid $Acento;
+  color: $Blanco;
+  gap: 10px;
+  height: 30vh;
+
+  img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+}
+
+.section3 {
+  height: 50vh;
+  gap: 10px;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/catalogo/fertilizantes.jpg);
+  background-position: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex-direction: column;
+  @include flexible;
+  padding: 10px;
+}
+
+/* fin de Index.html*/
+
+/* Inicio section de página Reprocann.html */
+
+#heroReprocann {
+  @include flexible;
+  text-align: center;
+  flex-direction: column;
+  height: 40vh;
+  color: $Blanco;
+  background-image: url("../img/catalogo/reprocann.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+}
+
+.sectionRepro1 {
+  text-align: center;
+  padding: 5px 0px;
+  color: $Blanco;
+  padding: 20px;
+}
+
+#galeriaFotos {
+  p {
     border-radius: 5px;
     box-shadow: inset #000000 0px 0px 5px 1px;
     background-color: $Background;
     border: 1px solid $Acento;
-    color: $Blanco;
-    gap: 10px;
-    height: 30vh;
-  
-    img {
-      width: 50px;
-      height: 50px;
-      border-radius: 50%;
-    }
-  }
-  
-  .section3 {
-    height: 50vh;
-    gap: 10px;
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/catalogo/fertilizantes.jpg);
-    background-position: cover;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
+    padding: 5px;
   }
 
-  /* fin de Index.html*/
-  
-  /* Inicio section de página Reprocann.html */
-  
-  #heroReprocann {
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    flex-direction: column;
-    height: 40vh;
-    color: $Blanco;
-    background-image: url("../img/catalogo/reprocann.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    object-fit: cover;
-  }
-  
-  .sectionRepro1 {
-    text-align: center;
-    padding: 5px 0px;
-    color: $Blanco;
-    padding: 20px;
-  }
-  
-  #galeriaFotos {
-    p {
-      border-radius: 5px;
-      box-shadow: inset #000000 0px 0px 5px 1px;
-      background-color: $Background;
-      border: 1px solid $Acento;
-      padding: 5px;
-    }
-    
-  }
-  
+}
+
 .galeria1 {
-     @include galerias();
+  @include galerias();
 }
+
 .galeria2 {
-   @include galerias();
+  @include galerias();
 }
+
 .galeria3 {
-   @include galerias();
+  @include galerias();
 }
+
 .galeria4 {
   @include galerias();
 }
+
 .galeria5 {
- @include galerias();
+  @include galerias();
 }
+
 .galeria6 {
- @include galerias();
-} 
-  .pie {
-    text-align: center;
-    padding: 5px;
-  
-    li {
-      margin: 5px;
-      color: $Blanco;
-      font-size: 1.2em;
-    }
-  
-    a {
-      color: #849d4f;
-    }
+  @include galerias();
+}
+
+.pie {
+  text-align: center;
+  padding: 5px;
+
+  li {
+    margin: 5px;
+    color: $Blanco;
+    font-size: 1.2em;
   }
 
-  .sectionbtn {
-    text-align: center;
-    padding: 10px 5px;
+  a {
+    color: #849d4f;
   }
-  
-  /* Cierre section de página Reprocann.html */
-  
-  /* Inicio section de pagina Tablas.html */
-  
-  /* Tabla de Cultivos */
+}
+
+.sectionbtn {
+  text-align: center;
+  padding: 10px 5px;
+}
+
+/* Cierre section de página Reprocann.html */
+
+/* Inicio section de pagina Tablas.html */
+
+/* Tabla de Cultivos */
 
 table {
-  width: 100%; 
+  width: 100%;
   border: 2px solid $Acento;
   text-align: center;
   border-collapse: collapse;
 
   td {
     padding: 10px;
-    color: $Blanco;      
+    color: $Blanco;
     border: 2px solid $Acento;
     text-align: center;
     border-collapse: collapse;
@@ -389,411 +391,428 @@ table {
 }
 
 
-  @media screen and (min-width: 992px) {
-    table {
-      a {
-        font-size: 1.5em;
-        padding: 5px;
-      }
-    
-      td a:hover {
-          color: $Acento;
-          border-radius: 5px;
-          border: #000000 2px solid;
-      }
-    }
-  }
-
-  
-  /* Tabla de Cultivos */
-  
-  /* Inicio Tabla Azteka Seccion  */
-  
-  #tabla__img-header img {
-    width: 100%;
-    height: 60vh; 
-  }
-  
-  .container__tabla {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  
-  
-    img {
-      width: 100%;
-      height: 400px;
-      object-fit: scale-down;
-    }
-  }
-  
-  .tabla__caracteristicas {
-    background-color: $Background;
-  
-    h3 {
-      padding: 5px 5px;
-      text-align: center;
-    }
-  
-    p {
-      color: $Blanco;
-      padding: 5px 5px;
-      text-align: center;
-      margin: 0 50px;
-      line-height: 2em;
-    }
-  }
-  
-  .azteka {
-    color: #ba0c19;
-    font-size: 3em;
-  }
-  
-  .kawsay {
-    color: #9b5d46;
-    font-size: 3em;
-  }
-  
-  .namaste {
-    color: #62951d;
-    font-size: 3em;
-  }
-  
-  .topcrop {
-    color: #fcab2d;
-    font-size: 3em;
-  }
-
-  @media screen and (max-width: 992px) {
-    #tabla__img-header {
-      display: none;
-    }
-  }
-
-  #tabla__azteka {
-    margin-top: 20px;
-  }
-    
-  
-  /* Fin section de pagina Tablas.html */
-  
-  /* Inicio section sustrato.html */  
-  .container__growmix {
-    display: flex;
-    width: 100%;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .growmix__video {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  @media screen and (min-width: 998px) {
-    video {
-      width: 500px;
-      height: 500px;
-    }
-  }
-
-  @media screen and (max-width: 998px) {
-    video {
-      width: 400px;
-      height: 50vh;
-    }
-  }
-  
-  .growmix__caracteristicas {
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-    justify-content: center;
-    padding: 5px;
-  
-    h1 {
-      font-size: 4em;
-      color: #95ff00;
+@media screen and (min-width: 992px) {
+  table {
+    a {
+      font-size: 1.5em;
+      padding: 5px;
     }
 
-    p{
-      color:$Blanco
-    }
-  }
-  
-  #nutrientes {
-    font-size: 1.5em;
-    color: $Blanco;
-  
-    li {
-      list-style: inside;
+    td a:hover {
       color: $Acento;
+      border-radius: 5px;
+      border: #000000 2px solid;
     }
   }
-  
-  .growmix__caracteristicas ul li {
-    font-size: 1.5em;
+}
+
+@media screen and (max-width: 336px) {
+  #tabla table {
+    transform: scale(0.8);
+  }
+  .growmix__video video {
+    width: 90vw;
+  }
+
+}
+
+@media screen and (max-width: 405px) {
+  .growmix__video video {
+    width: 90vw;
+  }
+}
+
+
+@media screen and (max-width: 329px) {
+  #tabla table {
+    width: 90vw;
+  }
+}
+
+/* Tabla de Cultivos */
+
+/* Inicio Tabla Azteka Seccion  */
+
+#tabla__img-header img {
+  width: 100%;
+  height: 60vh;
+}
+
+.container__tabla {
+  flex-direction: column;
+  @include flexible;
+
+
+  img {
+    width: 90%;
+    height: 50vh;
+    object-fit: contain;
+  }
+}
+
+.tabla__caracteristicas {
+  background-color: $Background;
+
+  h3 {
+    padding: 5px 5px;
+    text-align: center;
+  }
+
+  p {
     color: $Blanco;
-    padding: 5px;
-  }
-
-  .sustratoMain {
-    height: 100vh;
-  }
-
-  .sustratoP {    
-    background-image: url(/img/productos/sustratos/sustratos.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-  }  
-
-
-  /* Fin section sustrato.html */
-  
-  /* Container Mapa + Form section de pagina Contacto.html */
-  
-  /* Mapa */
-  
-  #mapa iframe {
-    border-radius: 5px;
-    box-shadow: 2px 2px 5px 5px;
-    width: 100%;
-    height: 300px;
-  }
-  
-  /* Mapa */
-  
-  /* Form */
-  
-  .container__form-items {
-    border-radius: 5px;
-    box-shadow: 2px 2px 5px 5px;
+    padding: 5px 5px;
     text-align: center;
-  
-    ::placeholder {
-      color: $Blanco;
-      padding: 0px 5px;
-    }
-  
-    label {
-      color: #97b35a;
-      font-size: 1.1em;
-      font-weight: bold;
-      margin-right: 5px;
-    }
+    margin: 0 50px;
+    line-height: 2em;
   }
-  
-  .form__caja ::placeholder {
-    text-align: center;
+}
+
+.azteka {
+  color: #ba0c19;
+  font-size: 3em;
+}
+
+.kawsay {
+  color: #9b5d46;
+  font-size: 3em;
+}
+
+.namaste {
+  color: #62951d;
+  font-size: 3em;
+}
+
+.topcrop {
+  color: #fcab2d;
+  font-size: 3em;
+}
+
+@media screen and (max-width: 992px) {
+  #tabla__img-header {
+    display: none;
   }
-  
-  .form__submit, .form__cancel {
-    padding: 5px;
-    margin: 5px;
+}
+
+
+#tabla__azteka img {
+  @include escale
+}
+#tabla__namaste img {
+  @include escale
+}
+#tabla__topcrop img {
+  @include escale
+}
+#tabla__kawsay img {
+  @include escale
+}
+
+
+
+
+/* Fin section de pagina Tablas.html */
+
+/* Inicio section sustrato.html */
+.container__growmix {
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  @include flexible;
+}
+
+.growmix__video {
+  @include flexible;
+}
+
+@media screen and (min-width: 998px) {
+  video {
+    width: 500px;
+    height: 500px;
   }
-  
-  .form__items {
-    padding: 5px 20px;
+}
+
+@media screen and (max-width: 998px) {
+  video {
+    width: 400px;
+    height: 50vh;
   }
+}
+
+.growmix__caracteristicas {
   
-  .form__caja {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 5px;
+  @include flexible;  
+  flex-flow: column nowrap;
+  padding: 5px;
+
+  h1 {
+    font-size: 4em;
+    color: #95ff00;
   }
-  
-  /* Form */
-  
-  .horarios__img {
-    width: 100%;
+
+  p {
+    color: $Blanco
   }
+}
+
+#nutrientes {
+  font-size: 1.5em;
+  color: $Blanco;
+
+  li {
+    list-style: inside;
+    color: $Acento;
+  }
+}
+
+.growmix__caracteristicas ul li {
+  font-size: 1.5em;
+  color: $Blanco;
+  padding: 5px;
+}
+
+.sustratoMain {
+  height: 100vh;
+}
+
+.sustratoP {
+  background-image: url(/img/productos/sustratos/sustratos.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+
+/* Fin section sustrato.html */
+
+/* Container Mapa + Form section de pagina Contacto.html */
+
+/* Mapa */
+
+#mapa iframe {
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px 5px;
+  width: 100%;
+  height: 300px;
+}
+
+/* Mapa */
+
+/* Form */
+
+.container__form-items {
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px 5px;
+  text-align: center;
+
+  ::placeholder {
+    color: $Blanco;
+    padding: 0px 5px;
+  }
+
+  label {
+    color: #97b35a;
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-right: 5px;
+  }
+}
+
+.form__caja ::placeholder {
+  text-align: center;
+}
+
+.form__submit,
+.form__cancel {
+  padding: 5px;
+  margin: 5px;
+}
+
+.form__items {
+  padding: 5px 20px;
+}
+
+.form__caja {
+  flex-direction: column;
   
+  margin-top: 5px;
+}
+
+/* Form */
+
+.horarios__img {
+  width: 100%;
+}
+
+.grid__container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: "img-grid" "horarios" "mapa" "form";
+}
+
+.img-grid {
+  grid-area: img-grid;
+}
+
+.horarios {
+  grid-area: horarios;
+}
+
+.mapa {
+  grid-area: mapa;
+}
+
+.form {
+  grid-area: form;
+}
+
+.horarios__img {
+  width: 70%;
+  height: 50vh;
+  transition: .5s;
+  object-fit: fit;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.horarios {
+  gap: 10px;
+
+  h3 {
+    font-size: 1.7em;
+    color: $Blanco;
+  }
+
+  p {
+    color: rgba(250, 250, 250, 0.5);
+  }
+
+  ul {
+
+    font-size: 1.5em;
+    gap: 10px;
+    color: $Blanco;
+  }
+}
+
+.container {
+  p {
+    color: #dddddd
+  }
+}
+
+.horarios__container {
+  padding-top: 20px;
+  text-align: center;
+  @include flexible;
+}
+
+.horarios {
+  text-align: center;
+  padding: 50px 0px;
+  flex-direction: column;
+  @include flexible;
+  font-size: 1.7em;
+}
+
+.mapa {
+  @include flexible;
+  flex-direction: column;
+  text-align: center;
+  gap: 10px;
+  margin-bottom: 20px;
+
+  iframe {
+    width: 200px;
+  }
+}
+
+.form {
+  padding: 10px 20px;
+  margin-bottom: 20px;
+
+  h2 {
+    margin-bottom: 10px;
+    color: $Acento;
+  }
+
+  p {
+    font-size: 1.5em;
+  }
+}
+
+@media screen and (min-width: 992px) {
   .grid__container {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-areas: "img-grid" "horarios" "mapa" "form";
-  }
-  
-  .img-grid {
-    grid-area: img-grid;
-  }
-  
-  .horarios {
-    grid-area: horarios;
-  }
-  
-  .mapa {
-    grid-area: mapa;
-  }
-  
-  .form {
-    grid-area: form;
-  }
-  
-  .horarios__img {
-    width: 70%;
-    height: 50vh;
-    transition: .5s;
-    object-fit: fit;
-  
-    &:hover {
-      transform: scale(1.1);
-    }
-  }
-  
-  .horarios {
-    gap: 10px;
-
-    h3 {
-      font-size: 1.7em;
-      color: $Blanco;
-    }
-
-    p {
-      color: rgba(250, 250, 250, 0.5);
-    }
-  
-    ul {
-
-      font-size: 1.5em;
-      gap: 10px;
-      color: $Blanco;
-    }
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "img-grid img-grid img-grid" "horarios horarios form" "mapa mapa mapa";
+    gap: 20px;
   }
 
-  .container {
-    p {
-    color:#dddddd
-    }
+}
+
+/* Fin section de pagina Contacto.html */
+
+/* Inicio Footer */
+
+footer {
+  width: 100%;
+}
+
+.container__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $bg-footer;
+  width: 100%;
+  min-height: 30px;
+  padding: 5px 5px;
+}
+
+/* Div footer para el h3 de la izquierda*/
+
+.container__footer-titulo h3 {
+  display: flex;
+  color: #fff;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+/* Div footer para el p del medio*/
+
+.container__footer-copyright p {
+  display: flex;
+  color: #59723d;
+  font-size: 1em;
+}
+
+/* Div footer para el p+redes de la derecha*/
+
+.container__footer-redes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  p {
+    padding: 5px 5px;
+    color: #849d4f;
+    font-size: 1.2em;
+    border-radius: 5px;
+    box-shadow: inset #000000 0px 0px 5px 1px;
+    border: 1px solid $Acento;
   }
-  
-  .horarios__container {
-    display: flex;
-    padding-top: 20px;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .horarios {
-    text-align: center;
-    height: 50vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    font-size: 1.7em;
-  }
-  
-  .mapa {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 20px;
-  
-    iframe {
-      width: 200px;
-    }
-  }
-  
-  .form {
-    padding: 10px 20px;
-    margin-bottom: 20px;
-  
-    h2 {
-      margin-bottom: 10px;
-      color: $Acento;
-    }
-  
-    p {
-      font-size: 1.5em;
-    }
-  }
-  
-  @media screen and (min-width: 992px) {
-    .grid__container {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      grid-template-areas: "img-grid img-grid img-grid" "horarios horarios form" "mapa mapa mapa";
-      gap: 20px;
-    }
-  
-    .form {
-      margin-right: 100px;
-    }
-  
-  }
-  
-  /* Fin section de pagina Contacto.html */
-  
-  /* Inicio Footer */
-  
-  footer {
-    width: 100%;
-  }
-  
-  .container__footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: $bg-footer;
-    width: 100%;
-    min-height: 30px;
+
+  a {
+    width: 25px;
     padding: 5px 5px;
   }
-  
-  /* Div footer para el h3 de la izquierda*/
-  
-  .container__footer-titulo h3 {
-    display: flex;
-    color: #3a552b;
-    font-size: 1.2em;
-    font-weight: bold;
-  }
-  
-  /* Div footer para el p del medio*/
-  
-  .container__footer-copyright p {
-    display: flex;
-    color: #59723d;
-    font-size: 1em;
-  }
-  
-  /* Div footer para el p+redes de la derecha*/
-  
-  .container__footer-redes {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  
-    p {
-      padding: 5px 5px;
-      color: #849d4f;
-      font-size: 1.2em;
-      border-radius: 5px;
-      box-shadow: inset #000000 0px 0px 5px 1px;
-      border: 1px solid $Acento;
-    }
-  
-    a {
-      width: 25px;
-      padding: 5px 5px;
-    }
-  
-    img {
-      width: 100%;
-      height: 25px;
-    }
-  }
 
-  
-  /* FIN Div footer para el p+redes de la derecha*/
- 
+  img {
+    width: 100%;
+    height: 25px;
+  }
+}
+
+
+/* FIN Div footer para el p+redes de la derecha*/

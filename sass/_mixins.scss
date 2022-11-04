@@ -21,3 +21,17 @@
   }
   
 }
+
+@mixin flexible() {
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+}
+
+@mixin escale() {
+  &:hover {
+    transform: scale(1.05);
+    transition: all 1.5s;
+  } 
+}
+
